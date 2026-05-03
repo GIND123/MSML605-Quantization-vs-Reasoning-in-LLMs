@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![GSM8K](https://img.shields.io/badge/Benchmark-GSM8K-orange.svg)](https://huggingface.co/datasets/openai/gsm8k)
 
-> **Authors:** Govind Arun · rAnna Thomas  
+> **Authors:** Govind Arun · Anna Thomas  
 > **Course:** MSML605  
 > **Hardware:** NVIDIA A100 (80GB)
 
