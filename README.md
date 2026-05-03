@@ -48,16 +48,6 @@ Our results reveal three findings not previously documented in the quantization 
 | | NF4 | 30.7% | 34.0% | 40.0% | 18.0% | −16.0pp | 15.33 | 14.8 | 8,484 |
 | | GPTQ | 34.0% | 40.0% | 42.0% | 20.0% | −20.0pp | 27.51 | 8.2 | 8,521 |
 
-### Accuracy by difficulty and quantization method
-
-<p align="center">
-  <a href="https://github.com/GIND123/MSML605-Quantization-vs-Reasoning-in-LLMs/blob/main/quantization_accuracy_by_difficulty.html">
-    <img src="assets/accuracy_by_difficulty.png" alt="Grouped bar chart comparing GSM8K accuracy across quantization methods and difficulty levels for Llama 3.1 8B and Mistral 7B" width="700"/>
-  </a>
-</p>
-
-> Interactive version: [`quantization_accuracy_by_difficulty.html`](quantization_accuracy_by_difficulty.html)
-
 ---
 
 ## Key Findings
