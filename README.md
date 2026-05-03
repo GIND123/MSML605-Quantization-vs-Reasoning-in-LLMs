@@ -3,15 +3,15 @@
 ---
 
 ## What It Is
-We compare four quantization configurations — BF16 (baseline), INT8, NF4, and GPTQ — across two architecturally distinct models: **Llama 3.1 8B Instruct** (Grouped Query Attention) and **Mistral 7B Instruct v0.3** (Sliding Window Attention), evaluated on a stratified 150-problem subset of GSM8K.
+We compare four quantization configurations: BF16 (baseline), INT8, NF4, and GPTQ, across two architecturally distinct models: **Llama 3.1 8B Instruct** (Grouped Query Attention) and **Mistral 7B Instruct v0.3** (Sliding Window Attention), evaluated on a stratified 150-problem subset of GSM8K.
 
 Our results reveal three findings not previously documented in the quantization literature:
 
-1. **Architecture-dependent quantization benefit** — NF4 improves Llama (GQA) accuracy by +7.3 percentage points over BF16, while the same method degrades Mistral (SWA) accuracy by −2.0pp. The optimal quantization method inverts between architectures.
+1. **Architecture-dependent quantization benefit**: NF4 improves Llama (GQA) accuracy by +7.3 percentage points over BF16, while the same method degrades Mistral (SWA) accuracy by −2.0pp. The optimal quantization method inverts between architectures.
     
-2. **Difficulty gap narrowing** — NF4 disproportionately improves hard problems (+16pp) over easy ones (+8pp) for Llama, narrowing the difficulty gap from 26pp to 18pp. This contradicts the standard prediction that quantization noise accumulates across reasoning steps.
+2. **Difficulty gap narrowing**: NF4 disproportionately improves hard problems (+16pp) over easy ones (+8pp) for Llama, narrowing the difficulty gap from 26pp to 18pp. This contradicts the standard prediction that quantization noise accumulates across reasoning steps.
     
-3. **GPTQ calibration bias** — GPTQ improves easy-problem accuracy for both models (+6–8pp) but provides exactly zero improvement on hard problems, widening the difficulty gap. This systematic bias traces to WikiText2 calibration data that statistically resembles simple reasoning more than multi-step chains.
+3. **GPTQ calibration bias**: GPTQ improves easy-problem accuracy for both models (+6–8pp) but provides exactly zero improvement on hard problems, widening the difficulty gap. This systematic bias traces to WikiText2 calibration data that statistically resembles simple reasoning more than multi-step chains.
 
 ## Setup
 
@@ -33,9 +33,9 @@ Our results reveal three findings not previously documented in the quantization 
 
 ### Dataset
 
-**GSM8K** (Grade School Math 8K) — 1,319 grade-school math word problems requiring 2–8 reasoning steps, with answers extracted via `#### <number>` format for fully automatic verification.
+**GSM8K** (Grade School Math 8K): 1,319 grade-school math word problems requiring 2–8 reasoning steps, with answers extracted via `#### <number>` format for fully automatic verification.
 
-**Stratified sampling.** 150 problems selected via stratified random sampling (seed=42):
+**Stratified sampling**: 150 problems selected via stratified random sampling (seed=42):
 
 | Bucket | Reasoning steps | Count |
 |:-------|:---------------:|:-----:|
@@ -55,7 +55,7 @@ Both models are evaluated on the **identical 150-problem subset** (indices cache
 
 ## Run It
 We ran this project on an A100(80GB) in colab.
-- Go to **Runtime → Change runtime type → A100 GPU**
+- Go to **Runtime > Change runtime type > A100 GPU**
 - Install the dependiencies and restart the session
 - Run all the cells in the notebook
 
