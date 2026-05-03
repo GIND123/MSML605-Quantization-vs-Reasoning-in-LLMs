@@ -1,0 +1,138 @@
+[
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "quantization": "BF16",
+    "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "prompt_type": "cot",
+    "decoding": "greedy",
+    "status": "COMPLETED",
+    "accuracy": 0.5533,
+    "accuracy_pct": 55.33,
+    "correct": 83,
+    "total": 150,
+    "avg_latency_sec": 14.3176,
+    "throughput_tokens_per_sec": 15.75,
+    "avg_tokens_generated": 225.4,
+    "peak_memory_mb": 16134.8,
+    "total_inference_time_min": 35.79,
+    "bucket_accuracy": {
+      "easy": {
+        "correct": 31,
+        "total": 50,
+        "accuracy": 0.62
+      },
+      "medium": {
+        "correct": 34,
+        "total": 50,
+        "accuracy": 0.68
+      },
+      "hard": {
+        "correct": 18,
+        "total": 50,
+        "accuracy": 0.36
+      }
+    }
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "quantization": "INT8",
+    "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "prompt_type": "cot",
+    "decoding": "greedy",
+    "status": "COMPLETED",
+    "accuracy": 0.5533,
+    "accuracy_pct": 55.33,
+    "correct": 83,
+    "total": 150,
+    "avg_latency_sec": 33.7728,
+    "throughput_tokens_per_sec": 6.65,
+    "avg_tokens_generated": 224.7,
+    "peak_memory_mb": 9168.9,
+    "total_inference_time_min": 84.43,
+    "bucket_accuracy": {
+      "easy": {
+        "correct": 30,
+        "total": 50,
+        "accuracy": 0.6
+      },
+      "medium": {
+        "correct": 33,
+        "total": 50,
+        "accuracy": 0.66
+      },
+      "hard": {
+        "correct": 20,
+        "total": 50,
+        "accuracy": 0.4
+      }
+    }
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "quantization": "NF4",
+    "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "prompt_type": "cot",
+    "decoding": "greedy",
+    "status": "COMPLETED",
+    "accuracy": 0.6267,
+    "accuracy_pct": 62.67,
+    "correct": 94,
+    "total": 150,
+    "avg_latency_sec": 15.5109,
+    "throughput_tokens_per_sec": 14.07,
+    "avg_tokens_generated": 218.3,
+    "peak_memory_mb": 5886.6,
+    "total_inference_time_min": 38.78,
+    "bucket_accuracy": {
+      "easy": {
+        "correct": 35,
+        "total": 50,
+        "accuracy": 0.7
+      },
+      "medium": {
+        "correct": 33,
+        "total": 50,
+        "accuracy": 0.66
+      },
+      "hard": {
+        "correct": 26,
+        "total": 50,
+        "accuracy": 0.52
+      }
+    }
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "quantization": "GPTQ",
+    "model_id": "hugging-quants/Meta-Llama-3.1-8B-Instruct-GPTQ-INT4",
+    "prompt_type": "cot",
+    "decoding": "greedy",
+    "status": "COMPLETED",
+    "accuracy": 0.56,
+    "accuracy_pct": 56.0,
+    "correct": 84,
+    "total": 150,
+    "avg_latency_sec": 10.7081,
+    "throughput_tokens_per_sec": 21.14,
+    "avg_tokens_generated": 226.4,
+    "peak_memory_mb": 11495.5,
+    "total_inference_time_min": 26.77,
+    "bucket_accuracy": {
+      "easy": {
+        "correct": 34,
+        "total": 50,
+        "accuracy": 0.68
+      },
+      "medium": {
+        "correct": 32,
+        "total": 50,
+        "accuracy": 0.64
+      },
+      "hard": {
+        "correct": 18,
+        "total": 50,
+        "accuracy": 0.36
+      }
+    }
+  }
+]
