@@ -78,7 +78,7 @@ Both models are evaluated on the **identical 150-problem subset** (indices cache
 
 ## Run It
 We ran this project on an A100 in colab.
-Run MISTRAL_Analysis.ipynb, then LLAMA_Analysis.ipynb. Or use the links to the colab notebooks.
+Download MISTRAL_Analysis.ipynb, then LLAMA_Analysis.ipynb. Or use the links to the colab notebooks.
 - Go to **Runtime > Change runtime type > A100 GPU**
 - Install the dependiencies and restart the session
 - Run all the cells in the notebook
