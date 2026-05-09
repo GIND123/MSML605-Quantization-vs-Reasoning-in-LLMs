@@ -1,4 +1,27 @@
-<p align="center"> <img src="assets/cat.png" width="120" /> </p> <h1 align="center">Evaluating the impact of Quantization on LLM math reasoning</h1> <p align="center"> <strong>how quantization affects math reasoning in LLMs</strong></strong> </p> <p align="center"> <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.12-blue.svg" alt="Python 3.12"></a> <img src="https://img.shields.io/badge/hardware-A100-76B900?style=flat&logo=nvidia&logoColor=white" alt="Hardware"> <a href="https://huggingface.co/datasets/openai/gsm8k"><img src="https://img.shields.io/badge/Benchmark-GSM8K-orange.svg" alt="GSM8K"></p> <p align="center"> <a href="#what-it-is">What</a> • <a href="#setup">Setup</a> • <a href="#run-it">Run It</a> •  <a href="#results">Results</a> • <a href="#limitations">Limitations</a </p>
+<p align="center">
+  <img src="assets/cat.png" width="120" />
+</p>
+<h1 align="center">Evaluating the impact of Quantization on LLM math reasoning</h1>
+<p align="center">
+  <strong>how quantization affects math reasoning in LLMs</strong>
+</p>
+<p align="center">
+  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.12-blue.svg" alt="Python 3.12"></a>
+  <img src="https://img.shields.io/badge/hardware-A100-76B900?style=flat&logo=nvidia&logoColor=white" alt="Hardware">
+  <a href="https://huggingface.co/datasets/openai/gsm8k"><img src="https://img.shields.io/badge/Benchmark-GSM8K-orange.svg" alt="GSM8K"></a>
+</p>
+<p align="center">
+  <a href="https://colab.research.google.com/drive/1jmdkB--GgxPotzz7MbNGxBjcxps6dgVx?usp=sharing"><img src="https://img.shields.io/badge/🦙_Llama_Quantization-Open_in_Colab-4c9e3f?style=flat" alt="Llama Quantization"></a>
+  <a href="https://colab.research.google.com/drive/1HFzsq9yOEv7fnuytqlsxtH8Mhaf2XB-t?usp=sharing"><img src="https://img.shields.io/badge/🌬️_Mistral_Quantization-Open_in_Colab-0070e0?style=flat" alt="Mistral Quantization"></a>
+  <a href="https://colab.research.google.com/drive/1HFzsq9yOEv7fnuytqlsxtH8Mhaf2XB-t?usp=sharing"><img src="https://img.shields.io/badge/🐒_LLM_Monkey_Pipline-Open_in_Colab-e18000?style=flat" alt="LLM Monkey Data Validation"></a>
+</p>
+<p align="center">
+  <a href="#what-it-is">What</a> •
+  <a href="#setup">Setup</a> •
+  <a href="#run-it">Run It</a> •
+  <a href="#results">Results</a> •
+  <a href="#limitations">Limitations</a>
+</p>
 
 ---
 
